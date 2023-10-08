@@ -1,9 +1,32 @@
+:root{
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+.dark-theme{
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+
+
 body{
     display: flex;
+    background-color: var(--primary-color);
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    transition: all ease 1s;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    left: 57.5%;
+    
 }
 
 .profile-card{
@@ -40,6 +63,15 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+    #icon{
+        width: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 168px;
+        left: 80%;
+        
+    }
+
     .profile-card{
         text-align: center;
         padding: 60px;
