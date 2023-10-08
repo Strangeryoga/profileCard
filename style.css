@@ -37,6 +37,13 @@ body{
     box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
 }
 
+.profile-card:hover{
+    box-shadow: 0 0 5px #f2dada,
+    0 0 25px #f2dada, 0 0 50px #f2dada,
+    0 0 100px #f2dada, 0 0 200px #f2dada;
+    transition: all ease 0.2s;
+}
+
 .profile-info img{
     width: 200px;
     height: 200px;
